@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZIMA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-white to-blue-50 text-gray-900 font-sans">
+
+  <!-- Age Verification Popup -->
+  <div id="agePopup" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
+      <h2 class="text-2xl font-bold mb-4">Are you 19 or older?</h2>
+      <p class="mb-6 text-gray-600">You must be of legal drinking age in Ontario to enter this site.</p>
+      <div class="flex gap-4 justify-center">
+        <button class="yes-btn bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Yes</button>
+        <button class="no-btn bg-gray-300 px-4 py-2 rounded hover:bg-gray-400">No</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow relative">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      
+      <!-- Mobile: logo left -->
+      <a href="index.html" class="sm:hidden">
+        <img src="images/zima_horizontal_logo.jpg" alt="ZIMA Logo" class="h-8 w-auto">
+      </a>
+      <a href="index.html" class="hidden sm:block mx-auto">
+        <img src="images/zima_horizontal_logo.jpg" alt="ZIMA Logo" class="h-10 w-auto">
+      </a>
+      <a href="cart.html" class="ml-auto sm:ml-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#314F90" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9h14l-2-9M9 21h6"/>
+        </svg>
+      </a>
+      <button class="sm:hidden p-2 ml-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-6 h-6 bg-[#314F90] rounded">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Desktop/Tablet nav -->
+    <div class="hidden sm:flex justify-center bg-[#314F90] py-2">
+      <nav class="space-x-8 text-white">
+        <a href="index.html" class="hover:text-blue-200">Home</a>
+        <a href="product.html" class="hover:text-blue-200">Products</a>
+        <a href="contact.html" class="hover:text-blue-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="text-center">
+    <h2 class="sr-only">Hero Section</h2>
+    <div class="bg-[#314F90] py-2">
+      <p class="text-[18px] sm:text-[16px] md:text-[32px] lg:text-[40px] font-bold text-white">
+        ZIMA — The Comeback is Clear.
+      </p>
+    </div>
+  
+    <h2 class="sr-only">Main Hero Message</h2>
+    <div class="text-center min-h-[250px] sm:min-h-[700px] lg:min-h-[800px] flex flex-col justify-center mb-12 
+                bg-cover bg-center bg-no-repeat"
+         style="background-image: url('images/pexels-ihor-lypnytskyi-117692765-12970782.jpg');">
+      
+      <h1 class="hidden text-4xl md:text-6xl font-bold text-blue-700">Refresh Your World</h1>
+  
+      <a href="product.html" 
+         class="mt-6 mx-auto inline-block bg-blue-500 text-white px-6 py-3 rounded-full shadow hover:bg-blue-600 transition">
+        DISCOVER THE TASTE
+      </a>
+    </div>
+  </section>
+  
+
+  <!-- Nostalgia Section -->
+  <section class="bg-white px-4 py-6">
+    <h2 class="sr-only">Brand Story</h2>
+    <h2 class="text-center text-[14px] sm:text-[16px] md:text-[24px] lg:text-[30px] font-bold text-[#314F90] leading-snug sm:leading-tight md:leading-normal lg:leading-relaxed">
+      BACK FROM THE 90S WITH A CRISP, REFRESHING TWIST – ZIMA IS THE CLEAR CHOICE FOR GOOD TIMES.
+    </h2>
+  </section>
+
+  <!-- Video Section -->
+  <section class="w-full bg-white flex justify-center py-8">
+    <h2 class="sr-only">Commercial Video</h2>
+    <div class="relative w-full max-w-[1000px] h-[280px] sm:h-[600px] lg:h-[800px] rounded-lg overflow-hidden shadow-lg">
+      <video class="absolute top-0 left-0 w-full h-full object-cover" preload="none" controls playsinline>
+        <source src="audio/Comp 1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Upcoming Flavor -->
+  <section class="text-center">
+    <h2 class="sr-only">Coming Soon Product</h2>
+    <div class="bg-[#314F90] py-2">
+      <p class="max-w-6xl mx-auto px-4 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[32px] font-bold italic text-white">
+        COMING SOON: CHERRY LIME SPLASH — SUMMER 2026
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Store Locator -->
+  <section class="text-center min-h-[150px] sm:min-h-[300px] lg:min-h-[350px] flex flex-col justify-center bg-white">
+    <h2 class="sr-only">Find ZIMA Near You</h2>
+    <h1 class="text-center text-[22px] sm:text-[22px] md:text-[42px] lg:text-[45px] text-blue-700 font-bold">
+      FIND ZIMA NEAR YOU
+    </h1>
+    <a href="product.html" class="mt-6 mx-auto inline-block bg-blue-500 text-white px-6 py-3 rounded-full shadow hover:bg-blue-600 transition">
+      LOCATE US
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#314F90] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <!-- Logo -->
+      <div class="mb-6 sm:mb-0">
+        <a href="index.html" class="text-2xl font-bold">ZIMA</a>
+      </div>
+      <!-- Links + Contact -->
+      <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
+        <!-- Navigation links -->
+        <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-2 sm:space-y-0">
+          <a href="#" class="hover:text-blue-200">FAQ</a>
+          <a href="product.html" class="hover:text-blue-200">SHOP</a>
+          <a href="#" class="hover:text-blue-200">OUR STORY</a>
+        </div>
+        <!-- Contact column -->
+        <div class="flex flex-col items-start sm:items-center sm:ml-6">
+          <p class="font-bold">CONTACT</p>
+          <!-- Only mobile email -->
+          <a href="mailto:info@drinkzima.com" class="text-sm mt-1 sm:hidden hover:text-blue-200">info@drinkzima.com</a>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom: copyright with short responsive line -->
+    <div class="text-center py-4 text-sm">
+      <div class="border-t border-white/30 w-16 sm:w-24 md:w-32 mx-auto mb-2"></div>
+      ©2025 ZIMA. All Rights Reserved. <a href="#" class="underline hover:text-blue-200">Privacy Policy</a>
+    </div>
+  </footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

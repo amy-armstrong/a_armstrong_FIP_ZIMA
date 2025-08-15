@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZIMA Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <header class="bg-white shadow relative">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      
+      <!-- Mobile: logo left -->
+      <a href="index.html" class="sm:hidden">
+        <img src="images/zima_horizontal_logo.jpg" alt="ZIMA Logo" class="h-8 w-auto">
+      </a>
+  
+      <!-- Desktop/Tablet: logo centered -->
+      <a href="index.html" class="hidden sm:block mx-auto">
+        <img src="images/zima_horizontal_logo.jpg" alt="ZIMA Logo" class="h-10 w-auto">
+      </a>
+  
+      <!-- Cart icon (all screens) -->
+      <a href="cart.html" class="ml-auto sm:ml-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#314F90" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9h14l-2-9M9 21h6"/>
+        </svg>
+      </a>
+  
+      <!-- Mobile: hamburger menu -->
+      <button class="sm:hidden p-2 ml-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-6 h-6 bg-[#314F90] rounded">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Desktop/Tablet nav -->
+    <div class="hidden sm:flex justify-center bg-[#314F90] py-2">
+      <nav class="space-x-8 text-white">
+        <a href="index.html" class="hover:text-blue-200">Home</a>
+        <a href="product.html" class="hover:text-blue-200">Products</a>
+        <a href="contact.html" class="hover:text-blue-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="text-center">
+    <div class="bg-[#314F90] py-2">
+      <p class="max-w-6xl mx-auto px-4 text-[18px] sm:text-[16px] md:text-[32px] lg:text-[40px] font-bold text-white">
+        LESS SUGAR, MORE CHILL
+      </p>
+      <p class="font-semibold text-white">100 CALORIES, 0G SUGAR, 7.5%ALC, 100% GOOD VIBES</p>
+    </div>
+  </section> 
+
+<!-- Mobile Carousel -->
+<div class="relative max-w-sm mx-auto sm:hidden">
+  <div class="carousel-container relative px-4 sm:px-6 lg:px-8 py-8">
+    <div class="carousel-item bg-blue-50 rounded-lg shadow overflow-hidden">
+      <img src="images/classic.jpg" class="w-full h-56 object-cover" alt="ZIMA Lemon Lime">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-blue-700">ZIMA Lemon Lime</h3>
+        <p class="mt-2 text-gray-600">The original, timeless crisp citrus taste that started it all.</p>
+        <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="carousel-item hidden bg-blue-50 rounded-lg shadow overflow-hidden">
+      <img src="images/tropical.jpg" class="w-full h-56 object-cover" alt="ZIMA Dragonfruit">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-blue-700">ZIMA Dragonfruit</h3>
+        <p class="mt-2 text-gray-600">Vacation in a can.</p>
+        <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="carousel-item hidden bg-blue-50 rounded-lg shadow overflow-hidden">
+      <img src="images/berry.jpg" class="w-full h-56 object-cover" alt="ZIMA Guava">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-blue-700">ZIMA Guava</h3>
+        <p class="mt-2 text-gray-600">A juicy blend of fresh Guava.</p>
+        <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation arrows  -->
+  <button class="left-arrow absolute z-50 left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100">
+    ◀
+  </button>
+  <button class="right-arrow absolute z-50 right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100">
+    ▶
+  </button>
+</div>
+
+<!-- Desktop/Tablet Grid -->
+<section class="hidden sm:grid gap-8 sm:grid-cols-3 lg:grid-cols-3 mt-8">
+  <div class="bg-blue-50 rounded-lg shadow overflow-hidden flex flex-col">
+    <img src="images/tropical.jpg" alt="ZIMA Lemon Lime" class="w-full h-56 object-cover">
+    <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-bold text-blue-700">ZIMA Lemon Lime</h3>
+      <p class="mt-2 text-gray-600 flex-grow">
+        Tangy twist of our citrus favourites.
+      </p>
+      <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+        Buy Now
+      </button>
+    </div>
+  </div>
+  
+  <div class="bg-blue-50 rounded-lg shadow overflow-hidden flex flex-col">
+    <img src="images/berry.jpg" alt="ZIMA Berry" class="w-full h-56 object-cover">
+    <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-bold text-blue-700">ZIMA Blue Raspberry</h3>
+      <p class="mt-2 text-gray-600 flex-grow">
+        A juicy blend of strawberries, raspberries, and blueberries.
+      </p>
+      <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+        Buy Now
+      </button>
+    </div>
+  </div>
+  
+  <div class="bg-blue-50 rounded-lg shadow overflow-hidden flex flex-col">
+    <img src="images/classic.jpg" alt="ZIMA Guava" class="w-full h-56 object-cover">
+    <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-bold text-blue-700">ZIMA Guava</h3>
+      <p class="mt-2 text-gray-600 flex-grow">
+        A juicy blend of fresh Guava.
+      </p>
+      <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+        Buy Now
+      </button>
+    </div>
+  </div>
+
+  <div class="bg-blue-50 rounded-lg shadow overflow-hidden flex flex-col">
+    <img src="images/tropical.jpg" alt="ZIMA Dragonfruit Citrus" class="w-full h-56 object-cover">
+    <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-bold text-blue-700">ZIMA Dragonfruit Citrus</h3>
+      <p class="mt-2 text-gray-600 flex-grow">
+        A cult classic.
+      </p>
+      <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+        Buy Now
+      </button>
+    </div>
+  </div>
+  
+  <div class="bg-blue-50 rounded-lg shadow overflow-hidden flex flex-col">
+    <img src="images/berry.jpg" alt="ZIMA Berry" class="w-full h-56 object-cover">
+    <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-bold text-blue-700">ZIMA Mango Chili</h3>
+      <p class="mt-2 text-gray-600 flex-grow">
+        You'll think you're on a vacation with one sip of this. Did someone say Cinco de Mayo?
+      </p>
+      <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+        Buy Now
+      </button>
+    </div>
+  </div>
+  
+  <div class="bg-blue-50 rounded-lg shadow overflow-hidden flex flex-col">
+    <img src="images/classic.jpg" alt="ZIMA Strawberry Kiwi" class="w-full h-56 object-cover">
+    <div class="p-4 flex flex-col flex-grow">
+      <h3 class="text-xl font-bold text-blue-700">ZIMA Strawberry Kiwi</h3>
+      <p class="mt-2 text-gray-600 flex-grow">
+        A sweet, refreshing blend of our locally grown strawberries and sweet kiwi.
+      </p>
+      <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+        Buy Now
+      </button>
+    </div>
+  </div>
+</section>
+
+  
+
+
+<div class="hidden sm:block bg-white px-4 py-6">
+  <h2 class="text-center text-[14px] sm:text-[16px] md:text-[24px] lg:text-[24px] 
+             font-bold text-[#314F90] leading-snug sm:leading-tight md:leading-normal lg:leading-relaxed">
+    CRISP, REFRESHING, AND IMPOSSIBLE TO FORGET – ZIMA ISN'T JUST ANOTHER SELTZER, IT'S YOUR TICKET TO TURNING AN ORDINARY NIGHT INTO SOMETHING WORTH REMEMBERING. WITH A CLEAN, LIGHT TASTE THAT HITS THE 
+    PERFECT BALANCE BETWEEEN SMOOTH AND SPARKLING, ZIMA KEEPS THE GOOD TIMES FLOWING WITHOUT WEIGHING YOU DOWN. ONE SIP, AND YOU'LL KNOW EXACTLY WHY IT'S THE DRINK EVERYONE'S TALKING ABOUT.
+  </h2>
+</div>
+
+<section style="background-image: url('images/pexels-viniciusvks-20427643.jpg');" class="text-center min-h-[250px] sm:min-h-[400px] lg:min-h-[400px] flex flex-col justify-center bg-blue-100 mb-12"
+>  
+  <h1 class="text-4xl md:text-6xl font-bold text-white">THE LEGEND RETURNS, <BR> ONE CHILL SIP AT A TIME.</h1>
+  <a href="index.html" 
+     class="mt-6 mx-auto inline-block bg-blue-500 text-white  px-4 py-2 text-[14px] sm:px-5 sm:py-2.5 sm:text-[14px] md:px-6 md:py-3 md:text-[18px] lg:px-8 lg:py-3.5 lg:text-[20px] rounded-full shadow hover:bg-blue-600 transition">
+OUR STORY  </a>
+</section>
+
+<section class="max-w-5xl mx-auto px-4 py-12 space-y-12">
+  <div class="bg-white px-4 py-6">
+    <h2 class="text-center text-[24px] sm:text-[24px] md:text-[36px] lg:text-[36px] 
+               font-bold text-[#314F90] leading-snug sm:leading-tight md:leading-normal lg:leading-relaxed">
+CLEAR PRAISE, CRISP REVIEWS
+    </h2>
+  </div>
+
+  <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+    <div class="flex flex-col items-center text-center">
+      <img src="images/icon-350226_1280.png" alt="Reviewer" class="w-20 h-20 rounded-full object-cover">
+      <p class="mt-2 font-bold">John Doe</p>
+      <p class="text-gray-500 text-sm">Toronto, ON</p>
+    </div>
+    <!-- Review Text -->
+    <div class="bg-blue-50 p-6 rounded-lg shadow max-w-lg">
+      <p class="text-gray-700">
+        “ZIMA is the best drink I've had in years. It’s crisp, refreshing, and perfect for any occasion.”
+      </p>
+    </div>
+  </div>
+
+  <!-- Review 2 (Right) -->
+  <div class="flex flex-col sm:flex-row-reverse items-center sm:items-start gap-6">
+    <div class="flex flex-col items-center text-center">
+      <img src="images/icon-350226_1280.png" alt="Reviewer" class="w-20 h-20 rounded-full object-cover">
+      <p class="mt-2 font-bold">Sarah Lee</p>
+      <p class="text-gray-500 text-sm">Vancouver, BC</p>
+    </div>
+    <div class="bg-blue-50 p-6 rounded-lg shadow max-w-lg">
+      <p class="text-gray-700">
+        “The tropical flavor instantly transports me to the beach. Absolutely love it!”
+      </p>
+    </div>
+  </div>
+
+  <!-- Review 3 (Left) -->
+  <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+    <div class="flex flex-col items-center text-center">
+      <img src="images/icon-350226_1280.png" alt="Reviewer" class="w-20 h-20 rounded-full object-cover">
+      <p class="mt-2 font-bold">Mike Johnson</p>
+      <p class="text-gray-500 text-sm">Calgary, AB</p>
+    </div>
+    <div class="bg-blue-50 p-6 rounded-lg shadow max-w-lg">
+      <p class="text-gray-700">
+        “Berry is my go-to flavor. Light, crisp, and just the right amount of sweetness.”
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="text-center min-h-[200px] sm:min-h-[450px] lg:min-h-[600px] flex flex-col justify-center mb-2 bg-cover bg-center bg-no-repeat"
+         style="background-image: url('images/pexels-viniciusvks-20427643.jpg');">
+  <h1 class="text-[22px] sm:text-[22px] md:text-[42px] lg:text-[48px] font-bold text-white leading-snug sm:leading-tight md:leading-normal lg:leading-relaxed">
+    CRACK A CAN,<br> TAG A FRIEND.<br> @DrinkZIMA
+  </h1>
+  <p class="mt-6 max-w-6xl mx-auto px-4 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[32px] font-bold text-white">
+    SHARE YOUR MOMENT FOR A CHANCE TO BE FEATURED ON OUR PAGE
+  </p>
+</section>
+
+
+<!-- Store Locator -->
+<section class="text-center min-h-[150px] sm:min-h-[300px] lg:min-h-[350px] flex flex-col justify-center bg-blue-300">
+  <h1 class="text-[22px] sm:text-[22px] md:text-[42px] lg:text-[45px] text-blue-700 font-bold">
+    FIND ZIMA NEAR YOU
+  </h1>
+  <a href="product.html" 
+     class="mt-6 mx-auto inline-block bg-blue-500 text-white 
+            px-4 py-2 text-[14px] 
+            sm:px-5 sm:py-2.5 sm:text-[14px] 
+            md:px-6 md:py-3 md:text-[18px] 
+            lg:px-8 lg:py-3.5 lg:text-[20px] 
+            rounded-full shadow hover:bg-blue-600 transition">
+    LOCATE US
+  </a>
+</section>
+
+<section class="bg-[#314F90] text-white py-12">
+  <h2 class="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+  <ul class="max-w-3xl mx-auto space-y-2 text-left">
+    <li><a href="#" class="hover:text-blue-200">Availability & Shipping</a></li>
+    <li><a href="#" class="hover:text-blue-200">Orders & Returns</a></li>
+    <li><a href="#" class="hover:text-blue-200">Product Details</a></li>
+  </ul>
+</section>
+
+<footer class="bg-[#314F90] text-white">
+  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row sm:justify-between sm:items-center">
+    <!-- Logo -->
+    <div class="mb-6 sm:mb-0">
+      <a href="index.html" class="text-2xl font-bold">ZIMA</a>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
+      <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-2 sm:space-y-0">
+        <a href="#" class="hover:text-blue-200">FAQ</a>
+        <a href="product.html" class="hover:text-blue-200">SHOP</a>
+        <a href="#" class="hover:text-blue-200">OUR STORY</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="flex flex-col items-start sm:items-center sm:ml-6">
+        <p class="font-bold">CONTACT</p>
+        <a href="mailto:info@drinkzima.com" class="text-sm mt-1 hover:text-blue-200">info@drinkzima.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center py-4 text-sm">
+    <div class="border-t border-white/30 w-16 sm:w-24 md:w-32 mx-auto mb-2"></div>
+    ©2025 ZIMA. All Rights Reserved. <a href="#" class="underline hover:text-blue-200">Privacy Policy</a>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
